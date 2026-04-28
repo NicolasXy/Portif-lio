@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevNícolas | Portfólio Full Stack</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+
+<nav id="navbar">
+    <div class="logo">Dev<span>Nícolas</span></div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#events">Eventos</a></li>
+        <li><a href="#contact">Contato</a></li>
+        <li><i class="fas fa-moon" id="theme-icon"></i></li>
+    </ul>
+
+    <div class="menu-toggle" id="mobile-menu" aria-label="Abrir menu">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
+
+<header id="home" class="hero">
+    <div class="hero-content" data-aos="fade-up">
+        <h1>Olá, eu sou <span>Nícolas de Oliveira</span></h1>
+        <p>Desenvolvedor Full Stack especializado em experiências digitais escaláveis e modernas.</p>
+
+        <div class="hero-btns">
+            <a href="#projects" class="btn">Ver Projetos</a>
+            <a href="documentos/NÍCOLAS DE OLIVEIRA-base.pdf" download class="btn-secondary">
+                <i class="fas fa-download"></i> curriculo
+            </a>
+        </div>
+    </div>
+</header>
+
+<section id="about">
+    <h2 data-aos="fade-down">Sobre Mim</h2>
+
+    <div class="about-container">
+        <div class="about-photo" data-aos="zoom-in">
+            <img src="imagens/eu.png" alt="Minha Foto" class="profile-pic">
+        </div>
+
+        <div class="about-details" data-aos="fade-left">
+            <p>
+                Sou um jovem profissional com formação pelo SESI, certificação técnica em Desenvolvimento de Sistemas pelo SENAI e atualmente estou cursando Desenvolvimento de Software Multiplataforma pela FATEC, em busca de oportunidades para aplicar e expandir meus conhecimentos na área de tecnologia. 
+            </p>
+
+            <div class="skills-mini-grid">
+                <div class="skill-tag"><i class="devicon-react-original colored"></i> React</div>
+                <div class="skill-tag"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
+                <div class="skill-tag"><i class="devicon-mysql-plain colored"></i> MySQL</div>
+                <div class="skill-tag"><i class="devicon-typescript-plain colored"></i> TypeScript</div>
+                <div class="skill-tag"><i class="devicon-css3-plain colored"></i> CSS</div>
+                <div class="skill-tag"><i class="devicon-javascript-plain colored"></i> JS</div>
+                <div class="skill-tag"><i class="devicon-python-plain colored"></i> Python</div>
+                <div class="skill-tag"><i class="devicon-html5-plain colored"></i> HTML</div>
+                <div class="skill-tag"><i class="devicon-java-plain colored"></i> JAVA</div>
+                <div class="skill-tag"><i class="devicon-php-plain colored"></i> PHP</div>
+                <div class="skill-tag"><i class="devicon-git-plain colored"></i> Git</div>
+                <div class="skill-tag"><i class="devicon-ruby-plain colored"></i> Ruby</div>
+                <div class="skill-tag"><i class="devicon-c-plain colored"></i> C</div>
+                <div class="skill-tag"><i class="devicon-cplusplus-plain colored"></i> C++</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 data-aos="fade-up">Projetos em Destaque</h2>
+
+    <div class="filter-btns" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="Include">Include</button>
+        <button class="filter-btn" data-filter="Radar">Radar Cidadão</button>
+    </div>
+
+    <div class="project-grid">
+        <div class="project-card" data-category="Include" data-aos="flip-left">
+            <div class="project-img">
+                <img src="imagens/include.jpg" alt="Projeto Include">
+            </div>
+            <div class="project-info">
+                <h3>Include</h3>
+                <p>Atuei como desenvolvedor fullstack responsável pelo desenvolvimento completo da aplicação mobile Include...</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="Radar" data-aos="flip-right">
+            <div class="project-img">
+                <img src="imagens/Radar.png" alt="Radar Cidadão">
+            </div>
+            <div class="project-info">
+                <h3>Radar Cidadão</h3>
+                <p>Atuei como desenvolvedor front-end em uma plataforma de transparência pública...</p>
+                <div class="project-links">
+                    <a href="https://github.com/eugeniojonatas/Radar-Cidadao-Froggrammers" target="_blank"><i class="fab fa-github"></i> Código</a>
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="events" class="alt-bg">
+    <h2 data-aos="fade-up">Eventos & Participações</h2>
+
+    <div class="events-container">
+        <div class="event-card" data-aos="fade-up">
+            <div class="event-img"> 
+                <img src="imagens/maratona.jpeg" alt="Maratona Interna">
+            </div>
+            <h3>Maratona de Programação</h3>
+            <span class="event-info">São José dos Campos — Abril 2026</span>
+            <p>Participei da maratona interna de programação na FATEC de SJC.</p>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="alt-bg">
+    <h2 data-aos="fade-up">Depoimentos</h2>
+    <div class="testimonial-grid">
+        <div class="testimonial-card" data-aos="fade-up">
+            <p>"..."</p>
+            <h4>- Jean Carlos</h4>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 data-aos="fade-up">Me envie uma mensagem</h2>
+
+    <div class="contact-wrapper">
+        <form class="contact-form">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Mensagem"></textarea>
+            <button class="btn">Enviar</button>
+        </form>
+
+        <div class="contact-info">
+            <p>Email: nicolasdeoliveira2006@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="social-links">
+        <a href="https://github.com/NicolasXy" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nicolas-de-oliveira-malibu/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Nícolas de Oliveira</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
