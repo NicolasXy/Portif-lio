@@ -63,4 +63,4 @@ toggleArrows();
 let paused = false;
 ['pointerenter', 'focusin', 'touchstart'].forEach((ev) => track.addEventListener(ev, () => (paused = true), { passive: true }));
 ['pointerleave', 'focusout', 'touchend'].forEach((ev) => track.addEventListener(ev, () => (paused = false), { passive: true }));
-if (!reduceMotion) setInterval(() => { if (!paused && !document.hidden && !arrows.hidden) go(1); }, 5000);
+if (!reduceMotion) setInterval(() => { if (!paused && !document.hidden && !arrows.hidden) go(1); }, 10000);
